@@ -5,7 +5,7 @@ int consCounter = 0;
 
 Console.WriteLine("Введите строку на русском языке");
 string text = Console.ReadLine();
-char[] textArray = text.ToCharArray();
+char[] textArray = (text.ToLower()).ToCharArray();
 
 
 foreach (char con in consonants)
